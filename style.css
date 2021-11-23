@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.logo{
+    color: #fff;
+    cursor: pointer;
+}
+.fot{
+    padding-top:20px ;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    width: 100%;
+}
+.lonly{
+    display: none;
+}
+ul{
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+ display: flex;
+ list-style: none;
+ text-decoration:none ;
+
+}
+.dog{
+    font-size: 18px;
+    margin: 0 10px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.dog:hover{
+    color: rgb(88, 163, 189);
+    transition: .3s;
+}
+
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(to left, rgb(248, 217, 177) ,rgb(214, 132, 84) );
+}
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    box-shadow: 1px 2px 10px black;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.headline{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 100px;
+    transform: translate(-20%,-70%);
+    color: #fff;
+    z-index: 3;
+}
+.hero::after{
+    content: '';
+    background: black;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    left: 0;
+    opacity: .3;
+    top: 0;
+}
+#simp{
+ display: none;
+}
+.fol{
+    display: none;
+}
+@media (max-width:650px) {
+
+    .fol{
+        position: absolute;
+        display: block;
+        right: 60px;
+        top: 25px;
+        cursor: pointer;
+        font-size: 30px;
+        color: #fff;
+    }
+    .lopp{
+        flex-direction: column;
+        z-index: 1;
+        position: absolute;
+        right: 600px;
+        margin-top: -10px;
+        background: rgba(243, 171, 123, 0.342);
+        height: 220px;
+        transition: .3s;
+        padding-top: 50px;
+    }
+    .logo{
+      position: absolute;
+      left: 60px
+    }
+    .dog{
+        margin-top: 15px;
+    }
+    .lonly{
+        display: block;
+        top: 17px;
+
+        font-size: 30px;
+        position: absolute;
+        margin-left: 32px;
+        cursor: pointer;
+        color: #fff;
+
+    }
+   .hero{
+       height: 40%;
+       top: 10%;
+   }
+    
+}
